@@ -1,0 +1,18 @@
+using System;
+
+public class HelloWorld {
+    public static void Main(string[] args) {
+        int num = 6;
+        num++; // Increment turns 7
+        num--; // Decrement turns 5 and if increment and decremenet are running the value will not changed.
+        Console.WriteLine(num);
+        
+        Console.WriteLine(Math.Abs(-513)); // vice versa math integer
+        Console.WriteLine(Math.Pow(3, 2)); // power of multiply by itself
+        Console.WriteLine(Math.Sqrt(36)); // Square Root
+        Console.WriteLine(Math.Max(4, 90)); // Max number choose between biggest number
+        Console.WriteLine(Math.Min(4, 90)); // Max number choose between smallest number
+        Console.WriteLine(Math.Round(4.6)); // Round off
+        
+    }
+}
