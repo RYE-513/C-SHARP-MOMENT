@@ -5,7 +5,7 @@ public class HelloWorld
     public static void Main(string[] args)
     {
         Console.Write("RYAN\nBSCS"); // \n escaping sequence
-        string characterName = "Rye " + "studying BSCS";
+        string characterName = "RYE STUDYING BSCS";
         Console.WriteLine(characterName);
         Console.WriteLine(characterName.Length);
         
@@ -13,6 +13,15 @@ public class HelloWorld
         Console.WriteLine(characterName.ToLower());
         
         Console.WriteLine(characterName.Contains("Academy"));
+        
+        Console.WriteLine(characterName[2]);
+        Console.WriteLine(characterName.IndexOf("B"));
+        Console.WriteLine(characterName.IndexOf("BSCS"));
+        Console.WriteLine(characterName.IndexOf("x")); // -1 means not match
+        
+         Console.WriteLine(characterName.Substring(8)); // 8th index read chars so on so forth...
+         Console.WriteLine(characterName.Substring(2, 7));
+        
     
     
     // number = 30;
