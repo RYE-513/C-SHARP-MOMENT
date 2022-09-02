@@ -1,0 +1,22 @@
+
+using System;
+
+    public class RYE {
+        public static void Main(string[] args) {
+            
+            string characterName = "RYE";
+            int characterAge = 20;
+            string characterProgLang = "C#"; //
+            
+            
+            Console.WriteLine("his name is " +characterName);
+            Console.WriteLine("he was only " + characterAge + " years old when he learned to programming "); // double + + in the middle statements
+            Console.WriteLine("he currently studying " + characterProgLang + " Programming Language");
+            
+            characterProgLang = "Python"; // you can  use same variable but don't declare it as string and it will turn an error.
+            Console.WriteLine("and he studying " + characterProgLang + " Programming Language");
+            
+        }
+    }
+    
+   
