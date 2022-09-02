@@ -1,0 +1,26 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("RYAN\nBSCS"); // \n escaping sequence
+        string characterName = "Rye " + "studying BSCS";
+        Console.WriteLine(characterName);
+        Console.WriteLine(characterName.Length);
+        
+        Console.WriteLine(characterName.ToUpper());
+        Console.WriteLine(characterName.ToLower());
+        
+        Console.WriteLine(characterName.Contains("Academy"));
+    
+    
+    // number = 30;
+    // Console.WriteLine(number);
+    // Console.Write(30); // this is called "constant"
+    
+    // string characterName = "Rye"; // Initialize
+    // string characterName; // Declaring
+    // characterName = "Ryan"; // Assigning
+    }
+}
