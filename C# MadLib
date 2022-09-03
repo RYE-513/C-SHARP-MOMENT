@@ -1,0 +1,33 @@
+using System;
+
+public class Rye {
+    public static void Main(string[] args) {
+        
+        
+        
+        string band, genre, album;
+        
+        Console.WriteLine("Band: ");
+        band = Console.ReadLine();
+        Console.WriteLine("Genre: ");
+        genre = Console.ReadLine();
+        Console.WriteLine("Album: ");
+        album = Console.ReadLine();
+        
+        
+        Console.WriteLine("You're Favorite Band is " +band);
+        Console.WriteLine(genre + "is youre favorite genre");
+        Console.WriteLine("Y ou're Favorite Album is " +album);
+        
+        
+        
+    
+        
+        
+        
+        
+    }
+    
+    
+    
+} 
