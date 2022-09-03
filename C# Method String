@@ -1,0 +1,28 @@
+using System;
+
+public class Rye {
+  public static void Main(string[] args) {
+  
+    SayHi("Ryan", 21); // it turns error if you not declare some string words.
+    SayHi("John", 18); // you can add as much as you can
+    SayHi("Rye", 32);
+    
+    // if theres problem in Output spacing adjust and back again.
+    
+    
+  }
+  
+  static void SayHi(string name, int age) { // it turns an error if they are not match
+  
+    Console.WriteLine("Hello " +name+ " your age is " +age);
+    
+  }
+  
+  }
+  
+  
+  // THINIGS I FORGOT IN C# SYNTAX
+  // 1. public class Name
+  // 2. semicolon at the end
+  // 3. curly brackets
+  // 4. Dyslexia
