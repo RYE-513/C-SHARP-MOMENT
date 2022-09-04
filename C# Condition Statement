@@ -1,0 +1,63 @@
+using System;
+
+    public class Rye {
+        public static void Main(string[] args) {
+            
+            
+            // && "and" logical operator "majority false"
+            
+            
+            bool isTall = true;
+            bool isMale = false; // false not shown in if only else
+            
+            if (isMale && isTall) { // if the one statement is false its majority false and it past as else
+                
+                Console.WriteLine("you are a tall male");
+                
+            }
+            else {
+                Console.WriteLine("you are either not male or not tall or both");
+            }
+            
+            
+             // || "or" logical operator "majority true"
+            
+            
+            bool isTall = true;
+            bool isMale = false;
+            
+            if (isMale || isTall) { // if the one statement ihas false and true its majority true.
+                
+                Console.WriteLine("you are a tall male");
+                
+            }
+            else {
+                Console.WriteLine("you are either not male or not tall or both");
+            }
+            
+            // ! "not" negation operator "vice versa"
+            
+            bool isTall = true;
+            bool isMale = false;
+            
+            if (isMale || isTall) { // if the one statement ihas false and true its majority true.
+                
+                Console.WriteLine("you are a tall male");
+            }
+            if else (is Male && !isTall) {
+            
+              Console.WriteLine("You are a short male");
+            }
+            if else (!is Male && isTall) {
+            
+              Console.WriteLine("You are a not a male but you are tall");
+            }
+            else {
+                Console.WriteLine("you are either not male or not tall or both");
+            }
+            
+            
+            
+            
+        }
+    }
