@@ -1,0 +1,28 @@
+using System;
+
+public class Rye {
+    public static void Main(string[] args) {
+        
+        // WHILE LOOP
+        
+        int index = 1;
+        
+        while (index <= 5) // if you not declare variable and value it shown the unexpected result
+        {
+            Console.WriteLine(index);
+            index++; // increment add 1 to index. without this increment it will print the index value infinite.
+        }
+        
+        // DO WHILE LOOP - if the while condition is false the "do" word is execute the code inside the loop before it checks the condition "true".
+        
+        int index = 6;
+        
+        do {
+          Console.WriteLine(index);
+          index++;
+        } while(index <= 5);
+        
+        
+        
+    }
+}
