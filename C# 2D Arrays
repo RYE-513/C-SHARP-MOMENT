@@ -1,0 +1,19 @@
+using System;
+
+
+    public class Rye {
+        public static void Main(string[] args) {
+            
+            int[,] numberGrid = { // [,,] putting multiple coma can lead to four / five dimensions
+                {1,2},
+                {3,4},
+                {5,6}
+            };
+            
+            int[,] myArray = new int[2,3]; // telling C sharp how many rows and columns
+            
+            Console.WriteLine(numberGrid[0, 0]);
+            
+            
+        }
+    }
