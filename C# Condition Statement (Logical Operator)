@@ -37,27 +37,23 @@ using System;
             
             // ! "not" negation operator "vice versa"
             
+            
+            // else if not if else
             bool isTall = true;
             bool isMale = false;
             
             if (isMale || isTall) { // if the one statement ihas false and true its majority true.
-                
-                Console.WriteLine("you are a tall male");
+                Console.WriteLine("you are a tall male"); // this is the answer because this is the first true condition
             }
-            if else (is Male && !isTall) {
-            
+            else if (isMale && !isTall) {
               Console.WriteLine("You are a short male");
             }
-            if else (!is Male && isTall) {
-            
+            else if (!isMale && isTall) {
               Console.WriteLine("You are a not a male but you are tall");
-            }
-            else {
+            } else {
                 Console.WriteLine("you are either not male or not tall or both");
             }
-            
-            
-            
-            
+                
+                  
         }
     }
