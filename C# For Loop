@@ -1,30 +1,33 @@
 using System;
 
-    public class Rye {
-        public static void Main(string[] args) {
-            
-            
-            int i = 1;
-            while(i <= 5) {
-                Console.WriteLine(i);
-                i++;
-            } 
-            Console.WriteLine("");
-            //FOR LOOP COMPARISON ABOVE OF WHILE LOOP
-            
-            for(int ii = 0; i <= 5; ii++) {
-                Console.WriteLine(ii);
-            }
-            Console.WriteLine("");
-            
-            //FOR LOOP PRINT ARRAY LIST
-            
-            int[] luckyNumbers = {31, 90, 431, 8, 56};
-            
-            for(int j = 0; j < luckyNumbers.Length; j++) {
-                Console.WriteLine(luckyNumbers[j]);
-            }
-            
-            
-        }
+public class Rye {
+    public static void Main(string[] args) {
+     
+     //FOOR LOOP
+     
+     for(int i = 0; i < 10; i++) {
+         Console.WriteLine(i);
+     }
+     
+    //WHILE LOOP
+     Console.WriteLine();
+     
+
+     int ai = 0;
+     while(ai <= 5) {
+         Console.WriteLine(ai);
+         ai++;
+     }
+     
+     // FOR LOOP .LENGTH
+     Console.WriteLine();
+     
+     string[] camo = {"Gold", "Platinum", "Damascus"};
+     
+     for(int arr = 0; arr < camo.Length; arr++) {
+         Console.WriteLine(camo[arr]);
+     }
+     
+        
     }
+}
