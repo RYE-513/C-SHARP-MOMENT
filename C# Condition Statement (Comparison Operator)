@@ -1,40 +1,57 @@
+/*
 > greater than
 < less than
 >= greater than or equal
 <= less than or equal
 == equa
 != not equal
-
+*/
 
 using System;
 
-    public class Rye {
-        public static void Main(string[] args) {
-            
-        
-        Console.WriteLine(GetMax(2, 10));
+public class Rye {
+    public static void Main(string[] args) {
         
         
-
-        }
+        int max = getMax(8, 10);
+        int min = getMin(4, 6);
         
-        static int GetMax(int num1, int num2) {
-            
-            int result;
-            
-            if (num1 > num2) {
-                result = num1;
-            } else {
-                result = num2;
-            }
-            
-            return result;
-            
-        
-        }
-        
+        Console.WriteLine("MAX:" +max);
+        Console.Write("MIN: " +min);
         
     }
+    
+    static int getMax(int num1, int num2) { 
+        // int num1, num2 parameters are purely numbers.
+        // static 'int' method is purely encode of integers.
+        
+        int rye; // declarative variable. meaning no '= value'
+        
+        if(num1 > num2) { // 8, 10 - false
+            rye = num1; // print statement = 8
+        } else { // 8, 10 - this true
+            rye = num2; // print statement = 10
+        }
+        
+        return rye; // without this return this method will not be rum
+        
+    }
+    
+    static int getMin(int num1, int num2) {
+        
+        int rye;
+        
+        if(num1 < num2) {
+            rye = num1;
+        } else {
+            rye = num2;
+        }
+        
+        return rye;
+    }     
+        
+        
+}
     
     ////////////////////////////////////////////////////////////////
     
