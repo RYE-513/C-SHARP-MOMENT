@@ -56,22 +56,34 @@ public class Rye {
     ////////////////////////////////////////////////////////////////
     
     
-        public class Rye {
+        using System;
+  
+  public class Rye {
         public static void Main(string[] args) {
             
+        /* MOSTLY WRONG
+        * missing ';'
+        * missing '{}''
+        * data type 'int, string'
+        */
         
-        Console.WriteLine(GetMax(20, 10, 40));
         
+        int amogus1 = getMax(20, 10, 40);
+        int amogus2 = getMax2(100, 500, 600, 800);
         
-
+        Console.WriteLine("getMax: "+amogus1);
+        Console.WriteLine("getMax2: "+amogus2);
+        
         }
         
-        static int GetMax(int num1, int num2, int num3) {
+        static int getMax(int num1, int num2, int num3) {
             
             int result;
-            
+            // 20, 10, 40
+            // T && F = FALSE
             if (num1 >= num2 && num1 >= num3) {
                 result = num1;
+            // F && F = FALSE
             } else if (num2 >= num1 && num2 >= num3) {
                 result = num2;
             } else {
@@ -79,8 +91,27 @@ public class Rye {
             }
             return result;
             
-        
         }
-        
+        //                    100,       500,      600,      800
+        static int getMax2 (int num1, int num2, int num3, int num4) {
+            
+            int rye;
+            
+            // F && F = FALSE
+            if(num1 >= num3 && num4 == num2) {
+                rye = num1; // 100
+                // T && T = TRUE
+            } else if(num2 <= num3 && num1 != num4) {
+                rye = num2; // 500 *this is the answer because its more closer to if than second ele if.*
+                // T || F = TRUE
+            } else if(num4 == num4 || num3 <= num1) {
+                rye = num3; // 600
+                // 700
+            } else {
+                rye = num4; // 800
+            }
+            
+            return rye;
+  }
         
     }
