@@ -1,27 +1,24 @@
 using System;
-//namespace RYE
 
-public class RYE {
+public class Rye {
     public static void Main(string[] args) {
-        
         
         Console.Write("Name: ");
         string name = Console.ReadLine();
         Console.Write("Age: ");
-        string age = Console.ReadLine();
+        int age = Convert.ToInt32(Console.ReadLine());
         Console.Write("Course: ");
         string course = Console.ReadLine();
         
-        Console.WriteLine("Hi Mr. " + name + " Age: " + age + " Course: " + course);
+        Console.WriteLine("Hello! Mr. "+name+ " You're age is "+age+ " Course:" +course);
         
-        
-        if (name == "RYE") {
-            Console.WriteLine("Full name: ");
-            string fullname = Console.ReadLine();
-            Console.WriteLine("Your Name is: " +fullname);
-            
-            
+        if (name == "Ryan" || name == "Rye") {
+            Console.WriteLine("Welcome!" +name);
         }
+        else {
+            Console.WriteLine("sus");
+        }
+        
         
         
     }
