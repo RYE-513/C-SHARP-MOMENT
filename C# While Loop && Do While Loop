@@ -22,7 +22,29 @@ public class Rye {
           index++;
         } while(index <= 5);
         
+        //////////
+        //Review
         
+
+     //While Loop
+
+    int rye = 1;
+    
+    while(rye <= 10) { // the difference between '<' and '<='  with equal is the given 10 is not concluded in the end output
+        Console.WriteLine(rye);
+        rye++;
+    }
+    
+    // Do While Loop
+    
+    int ryan = 1;
+    
+    do { // do while and while loop difference is 'do' is reading the print statement first before whlile statment
+        Console.Write("amogus \n");
+        ryan++;
+    } while(ryan <= 5);
+    
+       
         
     }
 }
