@@ -1,0 +1,38 @@
+class Book { // Book.cs file
+
+  public string title;
+  public string author;
+  public int pages;
+  
+  public Book(string aTitle, string aAuthor, int aPages) { // 'a' means argument
+  
+    title = aTittle;
+    author = aAuthor;
+    pages = aPages
+    
+    
+    }
+    
+using System;
+
+public class Rye {
+  public static void Main(string[] args(
+  
+    Book book1 = new Book("Harry Potter", "JK Rowling", "400") // this is more a lot easier to make another objects
+    Book book2 = new Book("Community", "Dan Harmon", "700")
+  
+  
+    book2.title = "HIMYM"; // updated
+  
+    Console.WriteLine(book2.title);  // print the updated "HIMYM".
+  
+  }
+}
+  
+   
+   
+  
+  
+  
+  
+ }
