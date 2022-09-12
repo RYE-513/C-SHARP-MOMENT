@@ -1,34 +1,51 @@
 using System;
 
-    public class Rye {
-        public static void Main(string[] args) {
+public class Rye {
+    public static void Main(string[] args) {
+        
+        
+        // GUESS WORD UNLIMITED
+        
+        string secretWord = "amogus";
+        string guess = "";
+        
+        while(guess != secretWord) {
+            Console.Write("Guess: ");
+            guess = Console.ReadLine();
+        }
+        Console.ReadLine("You Win!");
+        
+        // GUESS WORD WITH 3 LIMITS
+        
+        string secretWord = "amogus";
+        string guess = "";
+        
+        int guessCount = 0;
+        int guessLimit = 3;
+        bool rye = false;
+        
+        while(guess != secretWord && !rye) {
             
-            string secretWord = "Giraffe";
-            string guess = "";
-            
-            //Limit Guess Syntax
-            int guessCount = 0;
-            int guessLimit = 3;
-            bool outofGuesses = false;
-            
-            while(guess != secretWord && !outofGuesses) {
-                
-                if (guessCount < guessLimit) {
-                    Console.Write("Enter guess: ");
-                    guess = Console.ReadLine();
-                    guessCount++;
-                }
-                else {
-                    outofGuesses = true;
-                }
-            if (outofGuesses) {
-                Console.Write("You Lose!");
+            if(guessCount < guessLimit) {
+                Console.Write("Guess: ");
+                guess = Console.ReadLine();
+                guessCount++;
             } else {
-                Console.Write("You Win!");
+                rye = true;
             }
-         
-            }
+        
+        if(rye) {
+            Console.Write("You Lose");
+        } else {
+            Console.Write("You Win");
+        }
             
+        }
+        
+        
+        
+    }
+}
             
             
             
