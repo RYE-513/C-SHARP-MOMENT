@@ -13,7 +13,7 @@ public class Rye {
             Console.Write("Guess: ");
             guess = Console.ReadLine();
         }
-        Console.ReadLine("You Win!");
+        Console.WriteLine("You Win!");
         
         // GUESS WORD WITH 3 LIMITS
         
