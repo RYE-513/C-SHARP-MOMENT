@@ -26,29 +26,32 @@ public class Rye {
         
         while(guess != secretWord && !rye) {
             
+            
             if(guessCount < guessLimit) {
-                Console.Write("Guess: ");
-                guess = Console.ReadLine();
-                guessCount++;
+            Console.Write("Guess: ");
+            guess = Console.ReadLine();
+            guessCount++;
             } else {
                 rye = true;
             }
-        
-        if(rye) {
-            Console.Write("You Lose");
-        } else {
-            Console.Write("You Win");
         }
-            
-        }
-        
-        
+       
+       if(rye) {
+           Console.Write("You Lose!");
+       } else {
+           Console.Write("You Win!");
+       }
+       
         
     }
 }
-            
-            
-            
-            
-        }
-    }
+
+/* ALWAYS CHECK!
+* the curly brackers boundery between while loop and botton condition statments
+* the missing ";"
+* variable spelling and dont match
+* difference of Console.WriteLine & ReadLine
+* 
+*/
+
+
