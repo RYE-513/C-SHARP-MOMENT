@@ -1,0 +1,41 @@
+class Student { // filename Student.cs
+    
+    public string name;
+    public string major;
+    public double gpa;
+    
+    public Student(string aName, string aMajor, double aGpa) {
+        
+        name = aName;
+        major = aMajor;
+        gpa = aGpa;
+        
+    }
+    
+    public bool HasHonors() {
+        if(gpa >= 1.5) {
+            return true
+        }
+        
+        return false;
+    }
+
+class Rye { // filename Rye.cs
+    
+    static void Main(string[] args) {
+        
+        Student student1 = new Student("Rye", "Software Engineer", "1.4");
+        Student student2 = new Student("Ryan", "Machine Learning", "1.6");
+        Student student3 = new Student("John", "Web Developer", "1.8");
+        Student student4 = new Student("Abraham", "Object Oriented Programming", "1.1");
+        
+        Console.WriteLine(student1.HasHonors());
+        Console.WriteLine(student2.HasHonors());
+        Console.WriteLine(student3.HasHonors());
+        Console.WriteLine(student4.HasHonors());
+        
+    }
+    
+}
+    
+}
