@@ -18,6 +18,8 @@ public class Rye {
         Console.WriteLine(e.Message);
     } catch {
         Console.WriteLine("AMOGUS"); // this error message "amogus" will nor shown because FormatException and Divide..Zero are there. but if you put this specific catch at the top it turns an error.
+    } finally {
+        Console.WriteLine("This statement will be print if theres an error but this is optional.");
     }
     
     /* TRY{} is use to place  the syntax with output error not syntax error
