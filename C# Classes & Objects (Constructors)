@@ -1,0 +1,38 @@
+class Book { // this class Book is from another filename Book.cs
+    public string title; // these are class attibutes
+    public string author;
+    public int pages;
+    
+    // CLASSES && OBJECTS = you can create your own data types.
+}
+
+// this syntax below is from another filename BookMain.cs
+
+using System;
+
+public class Rye {
+    public static void Main(string[] args) {
+        
+        Book book1 = new Book(); // calling a method from public Book(String name) and it turns an error if this parameter is empty
+        book1.title = "Harry Potter";
+        book1.author = "JK Rowling";
+        book1.pages = 400;
+        
+        Book book2 = new Book();
+        book2.title = "Community";
+        book2.author = "Dan Harmon";
+        book2.pages = 400;
+        
+        // these objects and invisible data types are connected to Book.cs
+     
+        Console.WriteLine(book2.author); // Dan Harmon
+        
+        
+// CONSTRUCTOR
+
+
+    public Book(string name) { // this is method
+        Console.ReadLine(name);
+    }
+    
+    // Book() is the constructor. basically a special method inside of our class that's going to get called create an object of this class
