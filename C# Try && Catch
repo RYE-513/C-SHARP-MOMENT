@@ -1,0 +1,34 @@
+using System;
+
+public class Rye {
+    public static void Main(string[] args) {
+        
+        
+    try {    
+        Console.Write("Enter a Number: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        
+        Console.Write("Enter a Number: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine(num1 / num2);
+    } catch(DivideByZeroException e) { // specific error if you input 0. "Attempted to divide by zero."
+        Console.WriteLine(e.Message);  
+    } catch(FormatException e) { // you can declare multiple catch
+        Console.WriteLine(e.Message);
+    } catch {
+        Console.WriteLine("AMOGUS"); // this error message "amogus" will nor shown because FormatException and Divide..Zero are there. but if you put this specific catch at the top it turns an error.
+    }
+    
+    /* TRY{} is use to place  the syntax with output error not syntax error
+    * (Exception e) and (FormatException e) are different result shown type error 
+    * 'e' is the constant variable to use e.Message
+    * specific catch error like catch { Console.WriteLine("ERROR!")} is place after catch(FormatException e) { Console.WriteLine(e.Message); } because it turns an error
+    *
+    */
+    
+    
+        
+        
+    }
+}
