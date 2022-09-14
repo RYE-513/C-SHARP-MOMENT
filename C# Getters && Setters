@@ -1,8 +1,12 @@
 class Movie { // Movie.cs
     
+    // Getters & Setters has two method and controlled by access modifiers. "public", "private", "default"
+    // used for security what data is valid and not valid.
+    
+    
     public string title;
     public string director;
-    private string rating;
+    private string rating; // you can't access this private rating
     
     public Movie(string aTitle, string aDirector, string aRating) {
         
@@ -24,10 +28,17 @@ using System;
 public class Movies { // connected to Movie.cs
     public static void Main(string[] args) {
         
-        Movie movie1 = new Movie("The Avenger", "Joss Whedon", "PG-13");
-        Movie movie2 = new Movie("Shrek", "Adam Adamson", "PG-14")
+        Movie avengers = new Movie("The Avenger", "Joss Whedon", "PG-13");
+        Movie shrek = new Movie("Shrek", "Adam Adamson", "PG")
+        // G, PG, PG-13, PG
         
-        
-        
+        Console.WriteLine(avengers.rating) // you can't access it because its private modified
     }
+    
+    public string Rating {
+        get { } // "get" get the Rating attribute.
+        set { } // 
+    }
+    
+    
 }
