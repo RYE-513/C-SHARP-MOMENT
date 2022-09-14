@@ -1,0 +1,57 @@
+class chef { // Chef.cs
+    
+    public void MakeChicken() {
+        
+        Console.WriteLine("The Chef makes chicken");
+        
+    }
+    
+    public void MakeSalad() {
+        
+        Console.WriteLine("The Chef makes salad");
+        
+    }
+    
+    public virtual void MakeSpecialDish() {
+        
+        Console.WriteLine("The Chef makes bbq ribs");
+        
+    }
+    
+    
+    
+    
+    
+}
+
+
+
+    //////////////////////////////////////////////////////////////////////////////////////
+
+
+using System; 
+
+public class Rye {
+    public static void Main(string[] args) {
+    
+    Chef ched = new Chef();
+    chef.MakeChicken();
+    
+    
+    
+    
+    }
+}
+
+
+    //////////////////////////////////////////////////////////////////////////////////////
+    
+
+class ItalianChef { // italianchef.cs
+    
+    
+    
+    
+    
+    
+}
