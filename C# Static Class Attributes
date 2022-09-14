@@ -1,0 +1,43 @@
+class Song {
+    
+    public string title;
+    public string artist;
+    public length;
+    
+    public Song(string aTitle, string aArtist, int aLength) {
+        
+        title = aTitle;
+        artist = aArtist;
+        lengt = aLength;
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+using System;
+
+public class Rye {
+    public static void Main(string[] args) {
+        
+        Song LikeSlowDisappering = new Song("Like Slow Disappearing", "Turnover", 350);
+        Song NeverMEant = new Song("NeverMeant", "Americ anFootball", 480);
+        
+        
+        
+    }
+}
