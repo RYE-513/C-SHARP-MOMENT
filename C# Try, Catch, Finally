@@ -22,6 +22,8 @@ public class Rye {
         Console.WriteLine("This statement will be print if theres an error but this is optional.");
     }
     
+    * (Exeption e) && (FormatException e) cannot be execute at a time and it turns an error
+    
     /* TRY{} is use to place  the syntax with output error not syntax error
     * (Exception e) and (FormatException e) are different result shown type error 
     * 'e' is the constant variable to use e.Message
