@@ -1,5 +1,7 @@
 class chef { // Chef.cs
     
+    //Inheritance - combining the the two files with diffrent class.  
+    
     public void MakeChicken() {
         
         Console.WriteLine("The Chef makes chicken");
@@ -34,10 +36,11 @@ using System;
 public class Rye {
     public static void Main(string[] args) {
     
-    Chef ched = new Chef();
-    chef.MakeChicken();
+    Chef chef = new Chef();
+    chef.MakeSpecialDish();
     
-    
+    ItalianChef italianChef = new ItalianChef();
+    italianChef.MakeSpecialDish();
     
     
     }
@@ -47,11 +50,23 @@ public class Rye {
     //////////////////////////////////////////////////////////////////////////////////////
     
 
-class ItalianChef { // italianchef.cs
+class ItalianChef : Chef { // italianchef.cs
     
+    // Inhertance is sharing the method attributes from another new method from different file
     
+    public override void MakeSpecialDish() {
+        
+        Console.WriteLine("The Chef makes chicken parm");
+        
+    }
     
+    // Overriding Method
+    // 'virtual' keyword is you can overide a sub class and can change the functionality of this method 
     
+    public void MakePasta() {
+        Console.WriteLine("The Chef makes pasta")
+    }
     
+
     
 }
