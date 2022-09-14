@@ -8,8 +8,7 @@ class Book { // Book.cs file
   
     title = aTittle;
     author = aAuthor;
-    pages = aPages
-    
+    pages = aPages;
     
     }
     
