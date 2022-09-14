@@ -1,0 +1,27 @@
+static class UsefulTools {
+    
+    public static void SayHi(string name) {
+        
+        Console.WriteLine("Hello "+name);
+        
+    }
+    
+    
+}
+
+
+   ////////////////////////////////////////////////////////////////////////////////////
+
+public class Rye {
+    public static void Main(string[] args) {
+        
+        
+        UsefulTools tools = new UsefulTools(); // it turns an error because UsefolTolls declare as Static
+        UsefulTools.SayHi("Ryan");
+        
+        
+        Console.WriteLine(Math.Sqrt(144)); // this Math class is packaged installed that no need to  delcare math method Math myMath = new Math();
+        
+    }
+  
+}
