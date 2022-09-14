@@ -1,0 +1,33 @@
+class Movie { // Movie.cs
+    
+    public string title;
+    public string director;
+    private string rating;
+    
+    public Movie(string aTitle, string aDirector, string aRating) {
+        
+        title = aTitle;
+        director = aDirector;
+        rating = aRating;
+        
+    }
+    
+    
+    
+}
+
+
+
+
+using System;
+
+public class Movies { // connected to Movie.cs
+    public static void Main(string[] args) {
+        
+        Movie movie1 = new Movie("The Avenger", "Joss Whedon", "PG-13");
+        Movie movie2 = new Movie("Shrek", "Adam Adamson", "PG-14")
+        
+        
+        
+    }
+}
