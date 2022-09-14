@@ -2,40 +2,31 @@ class Song {
     
     public string title;
     public string artist;
-    public length;
+    public duration;
+    public static int songCount = 0;
     
-    public Song(string aTitle, string aArtist, int aLength) {
+    public Song(string aTitle, string aArtist, int aDuration) {
         
         title = aTitle;
         artist = aArtist;
-        lengt = aLength;
+        duration = aDuration;
         
         
         
     }
     
-    
-    
-    
-    
-    
-    
+
+ //////////////////////////////////////////////////////////////////////////////// 
     
 }
 
-
-
-
-
-
-
-using System;
+uing System;
 
 public class Rye {
     public static void Main(string[] args) {
         
-        Song LikeSlowDisappering = new Song("Like Slow Disappearing", "Turnover", 350);
-        Song NeverMEant = new Song("NeverMeant", "Americ anFootball", 480);
+        Song LikeSlowDisappering = new Song("Like Slow Disappearing", "Turnover", 238);
+        Song NeverMeant = new Song("NeverMeant", "Americ anFootball", 268);
         
         
         
