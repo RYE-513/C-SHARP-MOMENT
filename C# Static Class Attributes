@@ -1,5 +1,8 @@
 class Song {
     
+    // "static" class attribute is about class not the specific object of the class
+    
+    
     public string title;
     public string artist;
     public duration;
@@ -10,8 +13,13 @@ class Song {
         title = aTitle;
         artist = aArtist;
         duration = aDuration;
-        
-        
+        songCount++;
+     
+    }   
+    
+    public int getSongCount() {
+        return songCount();
+    }
         
     }
     
@@ -20,13 +28,21 @@ class Song {
     
 }
 
-uing System;
+using System;
 
 public class Rye {
     public static void Main(string[] args) {
         
         Song LikeSlowDisappering = new Song("Like Slow Disappearing", "Turnover", 238);
+        Console.WriteLine(Song.songCount); // will print because you declare it as "static"
         Song NeverMeant = new Song("NeverMeant", "Americ anFootball", 268);
+        Console.WriteLine(Song.songCount);
+        
+        Console.WriteLine(NeverMeant.songCount) // will turns an error. but if you declare new method it will turn as
+        Console.WriteLine(Song.getSongCount)
+        
+        //Console.WriteLine(Song.title); // it turns an error because this is only attribute.
+        
         
         
         
