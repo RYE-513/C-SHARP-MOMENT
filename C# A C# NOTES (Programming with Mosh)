@@ -1,0 +1,86 @@
+Source: https://www.youtube.com/watch?v=gfkTfcpWqAY&list=PLqYKDD0BJTMVijd0GiozBwO6SETMJi7Rc&index=2
+
+C# is a programming language
+.NET is a C# framework for building applications on Windows F#/VB.NET
+
+
+.NET Components
+
+1. Common Language Runtime (CLR)
+-C/C++ source code to Native Code * it would not run in different architecture or O.S. like Linux
+- C# borrowed from java community
+in Java the source code is not totally transated directly into machine code it's translated into an intermediate language called bytecode
+- C# translate to Intermediate Language or IL and next to Native Code or Machine and that is the job of CLR
+- and the process of IL translate to Native code called Just-In-Time (JIT)
+- with CLR you can your program in different architecture OS
+
+2. Class Library
+
+ARCHITECTURE OF .NET APPLICATIONS
+- the application consists of building blocks called classes these classes collaborate with each other at runtime
+- the classes provide functionality
+- Class is a container that has data "attribute" and functions "methods"
+
+- data represent tha state of the applciation
+
+ASSEMBLY (DLL or EXE)
+|
+NAMESPACE
+| application
+Classes
+|
+
+namespace - container for related classes like .NET framework
+namespace for working data like databases/graphucs/images/security
+
+- namespaces grow we need partitioning an application using Assembly
+- assembly is a container for related namespaces physically it's  a file on the disk 
+or can be executable "exe" or dynamically linked library "DLL"
+
+
+int number;
+int Number = 1;
+
+// number and Number are different variable because C# is case sensitive
+
+const float Pi = 3.14; // "const" keyword is to make a value not changeable
+
+
+
+NAMING CONVENTION
+
+- Camel Case: firstName
+- Pascal Case: FirstName
+- Hungarian Notation: strFirstName // avoid using this name convention  your program will look ugly
+
+
+
+OVERFLOWING
+
+byte number = 255; // byte is primitive data type ranging  to 0-255
+number = number + 1; // it turns '0' because 256+ is invalid in byte
+
+checked { // "checked" keyword overflow will not happen in runtime, exception will be thrown v
+
+byte number = 255;
+number = number +1;
+
+} // this is totally impractical in workspace
+ 
+j
+
+SCOPE
+
+- where a variable / constant has meaning
+- Ctrl + Shift + B - to access manual debugging
+- Ctrl + F5 - to open cmd
+- cw+tab - code snippet print statement shortcut
+- "Intellisense" meaning  Intelligent code completion or auto completion/suggestion tab
+- "var" this keyword let the value put what the specific data type e.g. var age = 21;
+  
+- var nice = 'A' - hover the var keyword at char data type and ctrl+click 'var'
+- Ctrl+X = delete specific line
+
+Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue); // 0-255 to get the specific range of primitive data type
+Console.WriteLine("{0} {1}", float.MinValue, float.MaxValue); 
+
