@@ -1,0 +1,37 @@
+using System;
+
+public class Program {
+    public static void Main(string[] args) {
+        
+        /* INCREMENT AND DECREMENT (PRE && POST)
+        * var++ is increment means add 1
+        * var-- is decrement means substract 1
+        *
+        * var++ is pre-increment
+        * ++var is post-increment
+        *
+        */
+        
+        int num1 = 10;
+        
+        Console.WriteLine(num1++); // 10
+        Console.WriteLine(++num1); // 12
+        
+        int nums1 = 10;
+        
+        Console.WriteLine(++nums1); // 11
+        Console.WriteLine(nums1++); // 11
+        
+        int num2 = 8;
+        
+        Console.WriteLine(num2--); // 8
+        Console.WriteLine(--num2); // 6
+        
+        int nums2 = 8;
+        
+        Console.WriteLine(--nums2); // 7
+        Console.WriteLine(nums2--); // 7
+        
+        
+    }
+}
