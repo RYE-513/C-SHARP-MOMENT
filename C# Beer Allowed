@@ -1,0 +1,20 @@
+using System;
+
+public class Program {
+    public static void Main(string[] args) {
+        
+        Console.Write("Enter your age: ");
+        int age = int.Parse(Console.ReadLine()); 
+        // int.Parse is use when you connect the input integer to condition statement
+        
+        if (age >= 22 && age <= 100) { // the age ranging of higher age is on the If Statement
+            Console.WriteLine("GOOD");
+        } else if (age >= 13 && age <= 21) {
+            Console.WriteLine("Sorry");
+        } else {
+            Console.WriteLine("Invalid Age");
+        }
+        
+        
+    }
+}
