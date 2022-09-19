@@ -20,7 +20,15 @@ public class Rye {
         Console.WriteLine("Y ou're Favorite Album is " +album);
         
         
+        ///////////////////////////////////////
         
+        string song = "\"Never Meant\"";
+        string artist = "American Football";
+        int duration = 510;
+        
+        Console.WriteLine(song +" is my favourite song");
+        Console.WriteLine("it was created by "+artist);
+        Console.WriteLine(duration + " song length");
     
         
         
