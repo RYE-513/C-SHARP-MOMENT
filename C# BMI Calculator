@@ -1,0 +1,39 @@
+using System;
+
+public class Program {
+    public static void Main(string[] args) {
+        
+        Console.WriteLine("BMI CALCULATOR");
+        
+        Console.Write("Enter your Name: ");
+        string name = Console.ReadLine();
+        Console.Write("Enter your Age: ");
+        int age = int.Parse(Console.ReadLine());
+        
+        Console.Write("Enter your Weight (in kilogram): ");
+        int weight = int.Parse(Console.ReadLine());
+        Console.Write("Enter your Weight (in meters): ");
+        double height = Convert.ToDouble(Console.ReadLine());
+        
+        double meters_squared = height * height;
+        double total = weight / meters_squared;   
+        
+        Console.WriteLine("BMI: " +total);
+        
+        if(total >= 1 && total <= 18.5) {
+            Console.WriteLine("Underweight");
+        } else if (total >= 18.6 && total <= 24.9) {
+            Console.WriteLine("Normal");
+        } else if (total >= 25 && total <= 29.9) {
+            Console.WriteLine("Overweight");
+        } else if (total >= 30 && total <= 34.9) {
+            Console.WriteLine("Obese");
+        } else if (total >= 35 && total <= 100) {
+            Console.WriteLine("Extremely Obese");
+        } else {
+            Console.WriteLine("Invalid Result");
+        }
+        
+        
+    }
+}
