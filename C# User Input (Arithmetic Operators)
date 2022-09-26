@@ -1,0 +1,25 @@
+using System;
+
+public class Program {
+    public static void Main(String[] args) {
+       
+        
+    Console.Write("Enter a Number: ");
+    int num1 = int.Parse(Console.ReadLine());
+    
+    Console.Write("Enter Second Number: ");
+    int num2 = int.Parse(Console.ReadLine());
+    
+    Console.WriteLine("{0} + {1} = {2}", num1, num2, num1+num2);
+    Console.WriteLine("{0} - {1} = {2}", num1, num2, num1-num2);
+    Console.WriteLine("{0} * {1} = {2}", num1, num2, num1*num2);
+    Console.WriteLine("{0} / {1} = {2}", num1, num2, num1/num2);
+    Console.WriteLine("{0} % {1} = {2}", num1, num2, num1%num2);
+    
+    /* EXPLANATION:
+    * the "{0} + {1} = {2}" is connected and index of  num1, num2, num1+num2
+    */
+        
+        
+    }
+}
