@@ -1,0 +1,46 @@
+using System;
+
+public class HelloWorld {
+    public static void Main(string[] args) {
+        
+
+    // IMPLICIT TYPE CONVERSION - Implicit casting is done automatically when passing a smaller size type to a larger size type:
+    
+    int myInt = 9;
+    double myDouble = myInt;       // Automatic casting: int to double
+
+    Console.WriteLine(myInt);      // Outputs 9
+    Console.WriteLine(myDouble);   // Outputs 9
+    
+    // EXPLICIT TYPE CONVERSION - Explicit casting must be done manually by placing the type in parentheses in front of the value:
+    
+    double myDouble = 9.78;
+    int myInt = (int) myDouble;    // Manual casting: double to int
+
+    Console.WriteLine(myDouble);   // Outputs 9.78
+    Console.WriteLine(myInt);      // Outputs 9
+    
+    var a = 10; // 'var' keyword is the automatic data type
+    var aa = 3;
+        
+    Console.WriteLine((float)a / (float)aa); // with the parameter of '(float)' the answer will conclude to remainder and the decimal point
+    
+    /////////////////////////
+    
+    byte b = 1; // 00000001
+    int i = b;  // 00000000 00000000 00000000 00000001 
+
+    int i = i;
+    byte b = (byte) i;
+
+    int i = 1;
+    byte b = (byte) i;
+    Console.WriteLine(b);
+    
+
+        
+        
+        
+    }
+    
+}
