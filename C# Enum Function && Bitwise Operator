@@ -17,19 +17,25 @@ connect the method variable "Days" into constructor arguments "Sun"
 
 ////////////////////////////////////////////////////////////////////////////////
 
+using System;
+
 public enum RyeBSCS {
 
-ProgA = 2; // 0010
-ProgB = 4; // 0100
-ProgC = 8; // 1000
+int ProgA = 2; // 0010
+int ProgB = 4; // 0100
+int ProgC = 8; // 1000
 
 }
 
+public class Program {
+    public static void Main(string[] args) {
 
-static void Main(string[] args) {
+    RyeBSCS myProg = RyeBSCS.progA;
+    int result = (int)myProg << 1;
+    RyeBSCS resultProg = (RyeBSCS)result;
 
-RyeBSCS myProg = RyeBSCS.progA;
-int result = (int)myProg << 1;
-RyeBSCS resultProg = (RyeBSCS)result;
+    Console.WriteLine(resultProg == RyeBSCS.ProgC);
 
-Console.WriteLine(resultProg == RyeBSCS.ProgC);
+
+    }
+}
