@@ -1,0 +1,32 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args) {
+        
+        // Break Statement - is to used to terminate from the loop and
+        // to excluded the rest program.
+           
+        Console.Write("Enter a Number: ");
+        int num = int.Parse(Console.ReadLine());
+        
+        while(num != 0) {
+            break;
+            Console.Write("Enter a Number: ");
+        }
+            
+        // Continue Statement - forces to execute the next iteration of the loop. if the condition specificly equal the program will not stop and it will proceed until the specific ranges are meet.
+        
+        int i;
+        int n = 2;
+        
+        for(i = 1; i <= 20; i++) {
+            if (i == n) {
+                n = n+2;
+                continue; // with this continue it prints the odd numbers and without this it prints the even numbers
+            }
+        }
+           
+        
+    }
+}
