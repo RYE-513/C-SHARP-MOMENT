@@ -14,3 +14,22 @@ public static void Main(string[] args) {
 
 this syntax shown above that the 'enum' helps to 
 connect the method variable "Days" into constructor arguments "Sun"
+
+////////////////////////////////////////////////////////////////////////////////
+
+public enum RyeBSCS {
+
+ProgA = 2; // 0010
+ProgB = 4; // 0100
+ProgC = 8; // 1000
+
+}
+
+
+static void Main(string[] args) {
+
+RyeBSCS myProg = RyeBSCS.progA;
+int result = (int)myProg << 1;
+RyeBSCS resultProg = (RyeBSCS)result;
+
+Console.WriteLine(resultProg == RyeBSCS.ProgC);
