@@ -1,0 +1,41 @@
+/* BITWISE OPERATOR
+        * '&' Bitwise and
+        * '|' Bitwise or
+        * '<<' Bitwise Shift Left
+        * '>>' Bitwise Shift Right
+        * '^' Bitwise xor
+        *  '~'
+        */
+        
+using System;
+
+public class Program
+{
+    public static void Main(string[] args) {
+        
+        Console.WriteLine(Convert.ToString((5 & 4), 2)); // 100
+        
+        /* 5 is '101' in binary
+         * 4 is '100' in binary
+         * then '101' and '100' will be add = 100
+         * 1 and 0 is '0', 0 and 1 is '0', 0 and 0 is '0', 1 and 1 is '1'
+         */
+         
+         Console.WriteLine(Convert.ToString((5 | 4), 2)); // 101
+        
+         /* 5 is '101' in binary
+         * 4 is '100' in binary
+         * then '101' and '100' will be add = 101
+         * 1 or 0 is '1', 0 or 1 is '1', 0 or 0 is '0', 1 or 1 is '1'
+         */
+         
+         Console.WriteLine(Convert.ToString((5 >> 4), 2)); // 10
+         
+         // 100 becomes 10 because of '>>' right shift it removes the first digit
+         
+         Console.WriteLine(Convert.ToString((5 << 4), 2)); // 10
+         
+         // 100 becomes 1000 because of '<<' left shift it added '0' at the last digit
+        
+    }
+}
