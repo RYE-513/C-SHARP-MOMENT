@@ -1,0 +1,16 @@
+Enum - enum (also called enumeration) is a user-defined value type used to represent a list of named integer constants. 
+It is created using the enum keyword inside a class, structure, or namespace. 
+It improves a program's readability, maintainability and reduces complexity.
+
+class Program {
+
+enum Days {Sun, Mon, Tue, Wed, Thur, Fri, Sat};
+
+}
+
+public static void Main(string[] args) {
+  Console.WriteLine(Days.Sun);
+}
+
+this syntax shown above that the 'enum' helps to 
+connect the method variable "Days" into constructor arguments "Sun"
