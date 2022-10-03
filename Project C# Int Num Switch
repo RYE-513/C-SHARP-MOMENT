@@ -1,0 +1,25 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args) {
+        
+        int num1, num2, temp;
+        
+        Console.Write("Input the first number: ");
+        num1 = int.Parse(Console.ReadLine());
+        
+        Console.Write("Input the second number: ");
+        num2 = int.Parse(Console.ReadLine());
+        
+        temp = num1;
+        num1 = num2;
+        num2 = temp;
+        
+        Console.WriteLine("After Swapping");
+        
+        Console.WriteLine("Switch Num1: "+num1);
+        Console.WriteLine("Switch Num2: "+num2);
+        
+    }
+}
