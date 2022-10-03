@@ -4,7 +4,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        
+     
+ while(true) {
         Console.Write("Please Select: \nA. Celsius to Fahrenheit \nB. Celsius to Kelvin \nC. Fahrenheit to Celsius \nD. Fahrenheit to Kelvin \nE. Kelvin to Celsius \nF. Kelvin to Fahrenheit");
         
         
@@ -70,7 +71,8 @@ public class Program
         } else {
             Console.WriteLine("Invalid Input");
         }
-        
+       
+ } 
    
  
         
