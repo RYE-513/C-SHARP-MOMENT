@@ -4,6 +4,8 @@ public class Program
 {
     public static void Main(string[] args) {
         
+        // TODO: Write a C# Sharp program that takes a number as input and print its multiplication table.
+        
         int x, result;
         
         Console.Write("Input a Number: ");
