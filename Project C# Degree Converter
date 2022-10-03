@@ -1,0 +1,47 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Celsius to Fahrenheit
+        
+        Console.Write("Enter Degree Celsius: ");
+        double celsius = double.Parse(Console.ReadLine());
+        
+        double fahrenheit = (celsius * 9/5) + 32;
+        Console.WriteLine("Celsius to Fahrenheit: "+fahrenheit);
+        
+        // Celsius to Kelvin
+        
+        Console.Write("Enter Degree Celsius: ");
+        double celsius2 = double.Parse(Console.ReadLine());
+        
+        double kelvin = celsius2 + 273.15;
+        Console.WriteLine("Celsius to Kelvin: "+kelvin);
+        
+        // Fahrenheit to Celsius
+        
+        Console.Write("Enter Degree Fahrenheit: ");
+        double to_Celsius = double.Parse(Console.ReadLine());
+        
+        double fah_cel = (to_Celsius - 32) * 5/9;
+        double round_fah_cel = Math.Round(fah_cel, 2);
+        Console.WriteLine("Celsius to Kelvin: "+round_fah_cel);
+        
+        // Fahrenheit to Kelvin
+        
+        Console.Write("Enter Degree Fahrenheit: ");
+        double to_Kelvin = double.Parse(Console.ReadLine());
+        
+        double fah_kel = (to_Kelvin - 32) * 5/9 + 273.15;
+        double round_fah_kel = Math.Round(fah_kel, 2);
+        Console.WriteLine("Celsius to Kelvin: "+round_fah_kel);
+        
+        // Kelvin to Celsius
+        // Kelvin to Fahrenheit
+   
+ 
+        
+    }
+}
