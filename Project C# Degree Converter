@@ -7,38 +7,42 @@ public class Program
         // Celsius to Fahrenheit
         
         Console.Write("Enter Degree Celsius: ");
-        double celsius = double.Parse(Console.ReadLine());
+        double cel_fah = double.Parse(Console.ReadLine());
         
-        double fahrenheit = (celsius * 9/5) + 32;
-        Console.WriteLine("Celsius to Fahrenheit: "+fahrenheit);
+        double cnvrt_cel_fah = (cel_fah * 9/5) + 32;
+        Console.WriteLine("Celsius to Fahrenheit: "+cnvrt_cel_fah);
         
         // Celsius to Kelvin
         
         Console.Write("Enter Degree Celsius: ");
-        double celsius2 = double.Parse(Console.ReadLine());
+        double cel_kel = double.Parse(Console.ReadLine());
         
-        double kelvin = celsius2 + 273.15;
-        Console.WriteLine("Celsius to Kelvin: "+kelvin);
+        double cnvrt_cel_kel = cel_kel + 273.15;
+        Console.WriteLine("Celsius to Kelvin: "+cnvrt_cel_kel);
         
         // Fahrenheit to Celsius
         
         Console.Write("Enter Degree Fahrenheit: ");
-        double to_Celsius = double.Parse(Console.ReadLine());
+        double fah_cel = double.Parse(Console.ReadLine());
         
-        double fah_cel = (to_Celsius - 32) * 5/9;
-        double round_fah_cel = Math.Round(fah_cel, 2);
-        Console.WriteLine("Celsius to Kelvin: "+round_fah_cel);
+        double cnvrt_fah_cel = (fah_cel - 32) * 5/9;
+        double round_cnvrt_fah_cel = Math.Round(fah_cel, 2);
+        Console.WriteLine("Celsius to Kelvin: "+round_cnvrt_fah_cel);
         
         // Fahrenheit to Kelvin
         
         Console.Write("Enter Degree Fahrenheit: ");
-        double to_Kelvin = double.Parse(Console.ReadLine());
+        double fah_kel = double.Parse(Console.ReadLine());
         
-        double fah_kel = (to_Kelvin - 32) * 5/9 + 273.15;
-        double round_fah_kel = Math.Round(fah_kel, 2);
-        Console.WriteLine("Celsius to Kelvin: "+round_fah_kel);
+        double cnvrt_fah_kel = (fah_kel - 32) * 5/9 + 273.15;
+        double round_cnvrt_fah_kel = Math.Round(cnvrt_fah_kel, 2);
+        Console.WriteLine("Celsius to Kelvin: "+round_cnvrt_fah_kel);
         
         // Kelvin to Celsius
+        
+        // Console.Write("Enter Degree Kelvin");
+        // double 
+        
         // Kelvin to Fahrenheit
    
  
