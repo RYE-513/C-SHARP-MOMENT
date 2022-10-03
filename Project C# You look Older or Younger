@@ -1,0 +1,28 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+    
+        Console.Write("Enter your Age: ");
+        int age = int.Parse(Console.ReadLine());
+        Console.Write("You look younger than {0} ",age);
+    
+        // USING CONDITION STATEMENTS
+        
+        Console.Write("Enter your Age: ");
+        int age = int.Parse(Console.ReadLine());
+        
+        if(age >= 8 && age <= 19) {
+            Console.WriteLine("Minor");
+        } else if (age >= 20 && age <= 100) {
+            Console.WriteLine("You look older than "+age);
+        } else {
+            Console.WriteLine("Invalid Input");
+        }
+        
+        
+        
+    }
+}
