@@ -4,6 +4,8 @@ public class Program
 {
     public static void Main(string[] args) {
         
+        // TODO: Write a C# Sharp program that takes four numbers as input to calculate and print the average.
+        
         double num1, num2, num3, num4, total;
         
         Console.Write("Enter a number: ");
