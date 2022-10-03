@@ -7,7 +7,10 @@ public class Program
         
         Console.Write("Please Select: \nA. Celsius to Fahrenheit \nB. Celsius to Kelvin \nC. Fahrenheit to Celsius \nD. Fahrenheit to Kelvin \nE. Kelvin to Celsius \nF. Kelvin to Fahrenheit");
         
+        
+        Console.WriteLine("\n");
         string select = Console.ReadLine();
+        
         
         // Celsius to Fahrenheit
         if(select == "A" || select == "a") {
@@ -26,7 +29,7 @@ public class Program
             Console.WriteLine("Celsius to Kelvin: "+cnvrt_cel_kel);
         
          // Fahrenheit to Celsius
-        }  else if(select == "C" || select == "c") {
+        } else if(select == "C" || select == "c") {
              Console.Write("Enter Degree Fahrenheit: ");
              double fah_cel = double.Parse(Console.ReadLine());
         
@@ -49,22 +52,23 @@ public class Program
         // Kelvin to Celsius
         } else if(select == "E" || select == "e") {
         
-        Console.Write("Enter Degree Kelvin: ");
-        double kel_cel = double.Parse(Console.ReadLine());
+            Console.Write("Enter Degree Kelvin: ");
+            double kel_cel = double.Parse(Console.ReadLine());
         
-        double cnvrt_kel_cel = kel_cel - 273.15;
-        Console.WriteLine("Kelvin to Celsius: "+cnvrt_kel_cel);
+            double cnvrt_kel_cel = kel_cel - 273.15;
+            Console.WriteLine("Kelvin to Celsius: "+cnvrt_kel_cel);
         
         // Kelvin to Fahrenheit
-        } } else if(select == "F" || select == "f") {
-        Console.Write("Enter Degree Kelvin: ");
-        double kel_fah = double.Parse(Console.ReadLine());
+        } else if(select == "F" || select == "f") {
         
-        double cnvrt_kel_fah = (kel_fah - 273.15) * 9/5 +32;
-        Console.WriteLine("Kelvin to Celsius: "+cnvrt_kel_fah);
+            Console.Write("Enter Degree Kelvin: ");
+            double kel_fah = double.Parse(Console.ReadLine());
+        
+            double cnvrt_kel_fah = (kel_fah - 273.15) * 9/5 +32;
+            Console.WriteLine("Kelvin to Celsius: "+cnvrt_kel_fah);
         
         } else {
-            Console.WriteLine("Invalid");
+            Console.WriteLine("Invalid Input");
         }
         
    
