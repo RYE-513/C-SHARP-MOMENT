@@ -4,7 +4,7 @@ using System.Text;
     // TODO: Write a C# program to create a new string from a given string (length 1 or more ) with the first character added at the front and back.
     // sample: 'AMOGUS' become '|A|AMOGUS|A|'
 
-public class Exercise17 {
+public class Program {
   static void Main(string[] args)
         {
            string str; 
