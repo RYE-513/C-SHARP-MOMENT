@@ -1,0 +1,30 @@
+        // TODO: Write a C# program remove specified a character from a non-empty string using index of a character.
+        /*
+        Sample Data:
+        - amogus
+        Sample Output:
+        aogus
+        amogs
+        amous
+        */
+        
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        
+        Console.WriteLine(remove_char("amogus", 1)); // aogus - it removes the index 1, '0' is the first number
+        Console.WriteLine(remove_char("amogus", 4)); // and the print statement are not continuation above. meaning 'aogus' is not became  'aogs' the 'm' is still there.
+        Console.WriteLine(remove_char("amogus", 3));
+        
+    }
+    public static string remove_char(string str, int i) // witout this method the syntax above will not be work.
+    {
+        
+        return str.Remove(i, 1); // "return" statement is crucial in declaring another method, "Remove" is a keyword from C# 
+        
+    }
+    
+}
