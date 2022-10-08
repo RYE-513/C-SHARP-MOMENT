@@ -1,0 +1,46 @@
+using System;
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Any Sentence: ");
+            string str = Console.ReadLine();
+
+            str = str + " ";
+            int len = str.Length;
+            String k = " ", max = " ", min = " ";
+            char ch;
+
+            int p, max1 = 0;
+            int min1 = len;
+
+            for(int i =0;i<len;i++)
+            {
+                ch = str[i];
+                if(ch != ' ')
+                {
+                    k = k + ch;
+                }
+                else
+                {
+                    p = k.Length-1;
+                    if(p<min1)
+                    {
+                        min1 = p;
+                        min = k;
+                    }
+                    if(p > max1)
+                    {
+                        max1 = p;
+                        max = k;
+                    }
+                    k = " ";
+                }
+            }
+            Console.Write("Shortest Word: " + min + " Length of the Word = " + min1+"\n");
+            Console.Write("Longest Word: " + max + " Length of the Word = " + max1);
+        }
+    }
+}
