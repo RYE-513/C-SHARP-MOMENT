@@ -1,0 +1,20 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+
+     // TODO: Write a C# program to convert an input string into lowercase and uppercase.
+     
+     Console.Write("TYPE ANY UPPERCASE WORDS: ");
+     string lowerMode = Console.ReadLine().ToLower();
+     Console.Write(lowerMode);
+     
+     Console.Write("\nType any lowercase words: ");
+     string upperMode = Console.ReadLine().ToUpper();
+     Console.Write(upperMode);
+     
+        
+    }
+}
