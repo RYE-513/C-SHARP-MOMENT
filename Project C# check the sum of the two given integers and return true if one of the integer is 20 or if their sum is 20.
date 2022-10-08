@@ -1,0 +1,48 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        
+        // TODO: Write a C# program to check the sum of the two given integers and return true if one of the integer is 20 or if their sum is 20.
+        
+        int num1, num2, total;
+        
+        Console.Write("Input a number: ");
+        num1 = int.Parse(Console.ReadLine());
+        
+        Console.Write("Input a number: ");
+        num2 = int.Parse(Console.ReadLine());
+        
+        total = num1 + num2;
+        
+        Console.WriteLine("Total: "+total);
+        
+        //  CORRECT SYNTAX
+        
+        Console.WriteLine(num1 == 20 || num2 == 20 || (num1 + num2 == 20));
+        
+        // MY SYNTAX
+        
+        if(num1 == 20) {
+            Console.WriteLine("True");
+        } else if(num2 == 20) {
+            Console.WriteLine("True");
+        } else if(num1+num2 == 20) {
+            Console.WriteLine("True");
+        } else {
+            Console.WriteLine("False");
+        }
+        
+
+         
+        
+        
+        
+        
+        
+        
+        
+    }
+}
