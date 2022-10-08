@@ -1,0 +1,45 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        
+        // TODO: Write a C# program to check if an given integer is within 20 of 100 or 200.
+        
+        // CORRECT SYNTAX
+        
+          Console.WriteLine("Input an integer: ");
+          int x = int.Parse(Console.ReadLine());
+          Console.WriteLine(result(x));
+    }
+
+        public static bool result(int n) {
+        
+           if (Math.Abs(n - 100) <= 20 || Math.Abs(n - 200) <= 20)
+                return true;
+                return false;
+ }
+}
+        
+        // MY SYNTAX
+        
+        int num1;
+        
+        Console.Write("Input a number: ");
+        num1 = int.Parse(Console.ReadLine());
+        
+        if(num1 == 20) {
+            Console.WriteLine("True");
+        } else if(num1 == 100) {
+            Console.WriteLine("True");
+        } else if(num1 == 200) {
+            Console.WriteLine("True");
+        } else {
+            Console.WriteLine("False");
+        }
+        
+
+        
+    }
+}
