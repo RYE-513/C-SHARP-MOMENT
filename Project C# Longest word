@@ -1,0 +1,24 @@
+using System;  
+public class Exercise24
+{  
+    public static void Main() 
+      {
+          // Write a C# program to find the longest word in a string.
+          
+                    string line = "the longest word is amogsussybaka";
+                    string[] words = line.Split(new[] { " " }, StringSplitOptions.None);
+                        string word = "";
+                        int ctr = 0;
+                        foreach (String s in words)
+                        {
+                            if (s.Length > ctr)
+                            {
+                                word = s;
+                                ctr = s.Length;
+                            }
+                        }
+                   
+                        Console.WriteLine(word);
+                    
+    }
+}
