@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+
+public class Program {
+ public static void Main(string[] args) {
+      
+      // Write a C# program to convert a hexadecimal number to decimal number.
+      
+      // DEC TO HEX
+      // DEC TO OCT
+      // HEX TO DEC - check
+      // HEX TO OCT
+      // OCT TO DEC
+      // OCT TO HEX
+      
+     Console.WriteLine("Input a Hexadecimal number: ");
+     string hexval = Console.ReadLine();
+   
+     int decValue = int.Parse(hexval, System.Globalization.NumberStyles.HexNumber);
+     Console.WriteLine("Convert to Decimal number: "+decValue);
+
+   }
+}
