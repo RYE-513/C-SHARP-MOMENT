@@ -1,0 +1,20 @@
+using System;
+
+public class Program 
+{
+ public static void Main(string[] args) 
+ {
+
+  // Write a C# program and compute the sum of the digits of an integer.
+  // input 36, 3+6
+
+  Console.Write("Input a number: ");
+  int n = int.Parse(Console.ReadLine());
+  int sum = 0;
+  while (n != 0) {
+   sum += n % 10;
+   n /= 10;
+  }
+  Console.WriteLine("Sum of the digits of the said integer: " + sum);
+ }
+}
