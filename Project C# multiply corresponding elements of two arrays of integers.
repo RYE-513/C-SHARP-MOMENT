@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+
+public class Program 
+{
+ public static void Main(string[] args) 
+ {
+     // TODO: Write a C# program to multiply corresponding elements of two arrays of integers.
+     
+        int[] first_array = {1, 3, -5, 4}; // Given array
+        int[] second_array = {1, 4, -5, -2}; // Given array
+     
+      Console.WriteLine("Array1: [{0}]", string.Join(", ", first_array)); // the string.Join is to print the entire array values
+      Console.WriteLine("Array2: [{0}]", string.Join(", ", second_array));
+      
+      Console.WriteLine("Multiply corresponding elements of two arrays: ");
+    
+     for (int i = 0; i < first_array.Length; i++)
+          {
+                
+          Console.Write(first_array[i] * second_array[i]+" "); // the second_array[i] 'i' same formula.
+        }
+   
+   }
+}
