@@ -1,0 +1,66 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        
+        Console.WriteLine("\t \t \t \t WELCOME TO CHINESE SOCIAL CREDIT");
+        
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+        
+        Console.Write("Enter your age: ");
+        string age = Console.ReadLine();
+         
+        Console.WriteLine("What is the greatest country? A. China B. Taiwan C. Japan D. USA");
+        string country = Console.ReadLine();
+        
+        if(country == "A" || country == "a") {
+             Console.WriteLine("+100 Social Credit Points");
+        } else if (country == "B" || country == "b") {
+             Console.WriteLine("-100 Social Credit Points");
+        } else if (country == "C" || country == "c") {
+             Console.WriteLine("-100 Social Credit Points");
+        } else if (country == "D" || country == "d") {
+             Console.WriteLine("-100 Social Credit Points");
+        } else {
+            Console.WriteLine("INVALID, -100 Social Credit Points");
+        }
+        
+        Console.WriteLine("is Taiwan a country? A. Hell Yes B. No C. wtf is taiwan D. Absolutely");
+        string taiwan = Console.ReadLine();
+        
+        if(taiwan == "A" || taiwan == "a") {
+             Console.WriteLine("+100 Social Credit Points");
+        } else if (taiwan == "B" || taiwan == "b") {
+             Console.WriteLine("-999 Social Credit Points");
+        } else if (taiwan == "C" || taiwan == "c") {
+             Console.WriteLine("+100 Social Credit Points");
+        } else if (taiwan == "D" || taiwan == "d") {
+             Console.WriteLine("-999 Social Credit Points");
+        } else {
+            Console.WriteLine("INVALID, -100 Social Credit Points");
+        }
+        
+        Console.WriteLine("What Happened to Tianammen Square? A. Genocide B. Nothing Happen C. wtf is tianammen square D. ah yes Deng Shaofeng");
+        string tinanammen = Console.ReadLine();
+        
+        if(tinanammen == "A" || tinanammen == "a") {
+             Console.WriteLine("-999 Social Credit Points");
+        } else if (tinanammen == "B" || tinanammen == "b") {
+             Console.WriteLine("+100 Social Credit Points");
+        } else if (tinanammen == "C" || tinanammen == "c") {
+             Console.WriteLine("+100 Social Credit Points");
+        } else if (tinanammen == "D" || tinanammen == "d") {
+             Console.WriteLine("-999 Social Credit Points");
+        } else {
+            Console.WriteLine("INVALID, -100 Social Credit Points");
+        }
+        
+        
+        
+        
+        
+    }
+}
