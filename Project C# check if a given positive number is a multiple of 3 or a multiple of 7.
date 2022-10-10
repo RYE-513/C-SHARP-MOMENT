@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+public class Program {
+  static void Main(string[] args)
+        {
+           // TODO: Write a C# program to check if a given positive number is a multiple of 3 or a multiple of 7.
+            
+           Console.WriteLine("Input first integer: ");  
+           int x = int.Parse(Console.ReadLine());
+           if (x > 0)
+           {
+              Console.WriteLine(x % 3 == 0 || x % 7 == 0);
+           }
+        }
+}
