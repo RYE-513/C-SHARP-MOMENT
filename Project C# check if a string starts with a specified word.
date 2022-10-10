@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+public class Program 
+{
+  static void Main(string[] args)
+        {
+            // Write a C# program to check if a string starts with a specified word.
+            // Note: Suppose the sentence starts with "Hello"
+            
+           string str; 
+           Console.Write("Input a string : ");
+           str = Console.ReadLine();
+           Console.WriteLine((str.Length < 6 && str.Equals("Hello")) || (str.StartsWith("Hello") && str[5] == ' '));
+        }
+}
