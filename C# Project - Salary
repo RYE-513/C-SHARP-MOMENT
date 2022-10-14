@@ -1,0 +1,36 @@
+using System;
+    public class Program
+{
+        public static void Main(string[] args)
+    {
+         
+         int numberOfDaysWork_PerCutoff = 208;
+         
+         Console.Write("Input Hours of Overtime: ");
+         int overtime = int.Parse(Console.ReadLine());
+         
+         if(numberOfDaysWork_PerCutoff >= 208)
+            {
+                Console.WriteLine("Nice");
+            }
+         
+        double ratePerHour = 71.25;
+        int numberOfHours_PerDay = 8;
+  
+        int overTimeHours = 8;
+        
+        double overtimeEarnings = ratePerHour * overTimeHours * 1.5;
+        
+        Console.WriteLine(overtimeEarnings);
+        
+        
+        int PhilHealth = 200;
+        int SSS = 1500;
+        int pagibig = 100;
+                
+        int TotalDeductions = PhilHealth + SSS + pagibig;
+          
+          
+          
+      }
+}
