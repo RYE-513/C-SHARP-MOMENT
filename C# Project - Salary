@@ -26,3 +26,77 @@ using System;
           
       }
 }
+
+
+
+///////////////////////////
+
+dylan answer
+
+
+
+
+
+
+
+
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        double rate = 71.25;
+        Console.WriteLine("Rate: 71.25");
+        Console.WriteLine("No. of hours/Day: 8");
+        Console.WriteLine("------------------------------");
+        Console.WriteLine("Input Total Hours of Work: ");
+        int totalWork = int.Parse(Console.ReadLine());
+        Console.WriteLine("------------------------------");
+        Console.WriteLine("Do you have a overtime? (y/n)");
+        string answer = Console.ReadLine();
+        
+        if (answer == "y"){
+        Console.WriteLine("------------------------------");
+        Console.WriteLine("Deductions:");
+        Console.WriteLine("Philhealth: 200");
+        Console.WriteLine("SSS: 1500");
+        Console.WriteLine("Pag-IBIG: 100");
+        Console.WriteLine(" ");
+        Console.WriteLine(" ");
+        Console.WriteLine("TOTAL DEDUCTIONS: 1800");
+        int deduct = 1800;
+        Console.WriteLine("------------------------------");
+        
+        Console.WriteLine("Input hours of Overtime: ");
+        int overTime = int.Parse(Console.ReadLine());
+        double totalOT = (rate*overTime) * 1.5;
+        
+        Console.WriteLine("------------------------------");
+        double grossIncome = (rate * totalWork) + totalOT;
+        double netPay = grossIncome - deduct;
+        Console.WriteLine("GROSS INCOME:" + grossIncome + "\n");
+        Console.WriteLine("NETPAY:" + netPay);
+        }
+        else{
+        Console.WriteLine("------------------------------");
+        Console.WriteLine("Deductions:");
+        Console.WriteLine("Philhealth: 200");
+        Console.WriteLine("SSS: 1500");
+        Console.WriteLine("Pag-IBIG: 100");
+        Console.WriteLine(" ");
+        Console.WriteLine(" ");
+        Console.WriteLine("TOTAL DEDUCTIONS: 1800");
+        int deduct = 1800;
+        Console.WriteLine("------------------------------");
+
+        double grossIncome = (rate * totalWork);
+        double netPay = grossIncome - deduct;
+        Console.WriteLine("GROSS INCOME:" + grossIncome + "\n");
+        Console.WriteLine("NETPAY:" + netPay);
+        }
+    }
+}
