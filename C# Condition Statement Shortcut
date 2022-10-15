@@ -1,0 +1,12 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        int gradeOFSTUDENT1 = 91;
+		 String result = (gradeOFSTUDENT1 < 100) ? "HIGHER" : "LOWER"; 
+		 Console.WriteLine(result);
+
+    }
+}
