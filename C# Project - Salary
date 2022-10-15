@@ -3,25 +3,68 @@ using System;
 {
         public static void Main(string[] args)
     {
+     
+    // SALARY 
          
-    double ratePerHour = 71.25;
-    int numberOfHours_PerDay = 8;
-    int numberOfDaysWork_PerCutoff = 208;
-    int overTimeHours = 8;
+    double ratePerHour = 71.25; // minimum wage per hour
+    int numberOfHours_PerDay = 8; // number of working hours in one day
+    int numberOfDaysWork_PerCutoff = 208; // days of work in one year
+    //int overTimeHours = 8; 
         
-    double overtimeEarnings = ratePerHour * overTimeHours * 1.5;
-    Console.WriteLine("Total Income: "+overtimeEarnings);
-        
-    int TotalDeductions = PhilHealth + SSS + pagibig;
-    Console.WriteLine("Total Deduction: "+TotalDeductions);   
+    double totalEarnings = ratePerHour * numberOfHours_PerDay * 1.5; // total earnings without overtime
+    Console.WriteLine("Total Income In One Day: "+totalEarnings);
     
-    Console.Write("Input Hours of Overtime: ");
+    double totalSalary = totalEarnings * 30;
+    Console.WriteLine("Salary in One Month: "+totalSalary);
+    
+    double annualSalary = totalSalary * 12;
+    Console.WriteLine("Annual Salary: "+annualSalary);
+    
+    // OVERIME
+    
+    Console.Write("\n Input Hours of Overtime: "); // 213.75 is the overtime rate per hour, 25% of total income in a day
     int overtime = int.Parse(Console.ReadLine());
-         
+    
+    double overtimeRate = overtime * 213.75 + totalEarnings;
+    Console.WriteLine("Total Income in One day with OverTime: "+overtimeRate);
+    
+    Console.Write("How many days you work Overtime?: ");
+    int workOT = int.Parse(Console.ReadLine());
+    
+    double totalSalaryOT = (overtime * 213.75 + totalEarnings) * workOT;
+    Console.WriteLine("Gross Pay: "+totalSalaryOT); // Gross Pay is the total income without deduction
+    
+    // DEDUCTION
+    
     int PhilHealth = 200;
     int SSS = 1500;
     int pagibig = 100;
-                
+    int TotalDeductions = PhilHealth + SSS + pagibig; // 1800 Deduction
+    
+    double oneMonthDeduction = totalSalary - TotalDeductions;
+    Console.WriteLine("Net Pay without Overtime: "+oneMonthDeduction); // Netpay is overall salary with deductions
+    
+    double oneMonthDeduction_withOT = totalSalaryOT - TotalDeductions;
+    Console.WriteLine("Net Pay with Overtime: "+oneMonthDeduction_withOT);
+    
+    /*
+    Gross pay 
+        is the amount of money your employees receive before any taxes and deductions are taken out
+        For example, when you tell an employee, “I’ll pay you $50,000 a year,” 
+        it means you will pay them $50,000 in gross wages.
+    
+    Net pay 
+        is the amount of money your employees take home after all deductions have been taken out.
+        This is the money they actually get on payday.
+
+    */
+    
+    // TAX DEDUCTION:
+    
+    
+    
+    
+
           
           
       }
@@ -30,18 +73,9 @@ using System;
 
 
 ///////////////////////////
+DYLAN ANSWER
+//////////////////////////
 
-dylan answer
-
-
-
-
-
-
-
-
-// Online C# Editor for free
-// Write, Edit and Run your C# code using C# Online Compiler
 
 using System;
 
