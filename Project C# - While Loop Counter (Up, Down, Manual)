@@ -1,0 +1,65 @@
+using System;
+
+public class Program {
+	public static void Main(string[] args) {
+	
+		//countUp();
+		//countDown();
+		manualCounter();
+	}	
+	
+   static void countUp() {
+	
+	    Console.WriteLine("COUNTING UP: TYPE ANY NUMBER!: ");
+	    int firstNumber = int.Parse(Console.ReadLine());
+	
+    	Console.WriteLine("TYPE LAST NUMBER!: ");
+	    int lastNumber = int.Parse(Console.ReadLine());  // if you want to fix the range change it to... int lastNumber = 100;
+	
+	    while(firstNumber <= lastNumber) {
+	    	Console.WriteLine(firstNumber);
+	    	firstNumber = firstNumber +1;
+    	}
+	
+	}
+
+	
+	
+	
+	static void countDown() {
+		
+	    Console.WriteLine("COUNTING DOWN: TYPE ANY NUMBER!");
+	    int belowFirstNumber = int.Parse(Console.ReadLine());
+	
+    	Console.WriteLine("TYPE LAST NUMBER");
+	    int belowLastNumber = int.Parse(Console.ReadLine());
+	
+	    while(belowFirstNumber >= belowLastNumber) {
+		    Console.WriteLine(belowFirstNumber);
+		    belowFirstNumber = belowFirstNumber -1;
+		
+	    }	
+	}
+	
+
+	
+    static void manualCounter() {
+		
+		int num = 0; // this is the first step to make this syntax  
+		
+		while(num <= 10) { // while(0 <= 10) { it will run unspecific-endless int value.
+			Console.WriteLine(num);
+			num++; // without this increment it will run endless specific integer value.
+			
+			// 'num++;'' same with 'num = num +1;'
+	    }
+	
+		/* 2nd increment num++; * shows even numbers.
+		 * 3rd increment num++;	* shows odd numbers.
+		 * 4th increment... num++; * divisible numbers.
+		 */
+	}
+
+
+}
+	
