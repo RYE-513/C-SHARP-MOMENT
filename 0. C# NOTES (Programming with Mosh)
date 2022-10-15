@@ -84,3 +84,13 @@ SCOPE
 Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue); // 0-255 to get the specific range of primitive data type
 Console.WriteLine("{0} {1}", float.MinValue, float.MaxValue); 
 
+
+NAMING CONVENTIONS
+
+public class NAMING_CONVENTIONS { //naming a class should be Pascal case
+public static void main(String[] args) {
+
+		string firstName  = "this is camelCase"
+		string first_name = "this is snake_case"
+		string FirstName  = "this is PascalCase"
+	
