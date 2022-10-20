@@ -1,0 +1,55 @@
+using System;
+
+public class Program
+{
+	public static void Main(string[] args)
+{
+
+	Console.Write("Hello, What is you're name? ");
+	string name = Console.ReadLine();
+
+	Console.WriteLine("How are you? Mr. "+name);
+	Console.WriteLine("Do you feel burnout and stagnant in learning programming today? ");
+	string burnout = Console.ReadLine();
+
+	if(burnout == "Yes" || burnout == "yes") {
+
+		Console.WriteLine("Type 'amogus' to heal");
+		string amogus = Console.ReadLine();
+
+		Console.WriteLine("*,  .  .  ..      *(#      ");
+		Console.WriteLine(" /. *&@@&@&@@@@@@&&@&#* .*(  ");
+		Console.WriteLine(" /. (&@@@@&&@@@@@@@&@@&@&/  /#  ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+    Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+		Console.WriteLine(" ");
+
+	} else {
+		Console.WriteLine("Have a nice day nigga!");
+	}
+
+
+
+
+
+
+
+	}
+}
