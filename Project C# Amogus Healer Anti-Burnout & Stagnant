@@ -34,12 +34,12 @@ public class Program
 		Console.WriteLine(", ,%@@&&&@@@@&@@@@@@&&@@@@@@@@@@@@@@&* *  ");
         Console.WriteLine(" . /&&@@&@&(*,.        .,(&@&@@@@@@@@&/ ,  ");
 		Console.WriteLine("* ,%&@&@@&* ,,          , ,&&@@@@@@@@&/ , ");
-		Console.WriteLine("*,,,*/(, /&@@@@@&/ ,             .%&@@&@@@@@&/ ,  ");
-		Console.WriteLine(", .*/((//*.,%@&@&@&&#. .            ,&@@@@@@@@@&/ *   ");
-		Console.WriteLine("..#@@@@@@&@@&&@@@&&@&* ,         /, /&@@@@@@&@@&*.*  ");
-		Console.WriteLine("*(%&&@&&@&&&%%(*. .,   .,  .,*/**%&@&@@@@&@@%,.  ");
-		Console.WriteLine(",.           ..,.     , .(&@@&@@@@@@@&@@@&@@#..  ");
-		Console.WriteLine(", .(%&@@@@@@&&&&&&%(,. .   ");
+		Console.WriteLine("*,,/&@@@@@&/ ,             .%&@@&@@@@@&/ ,  ");
+		Console.WriteLine(",*/(%@&@&@&&#. .            ,&@@@@@@@@@&/ *   ");
+		Console.WriteLine("..#@@@@&@&&@&* ,         /, /&@@@@@@&@@&*.*  ");
+		Console.WriteLine("*(%&&@&&@&&%%(*. .,   .,  .,*/**%&@&@@@@&@@%,.  ");
+		Console.WriteLine(",.           ..,.        (&@@&@@@@@@@&@@@&@@#..  ");
+		Console.WriteLine(", .(                         %&@@@@@@&&&&&&%(,. .   ");
 
 	} else {
 		Console.WriteLine("Have a nice day nigga!");
